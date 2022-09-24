@@ -1,4 +1,4 @@
 
-git version 2.32.0 (Apple Git-132)
-Python 3.8.8
-pip 21.0.1
+git version 2.34.1
+Python 3.10.4
+pip 22.0.2 
