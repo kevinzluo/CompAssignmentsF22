@@ -1,5 +1,5 @@
 
-def rm_smallest( d) -> list:
+def rm_smallest(d):
     # Your code here!
     if len(d.keys()) == 0:
         return {}
