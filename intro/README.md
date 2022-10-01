@@ -28,8 +28,7 @@ Go to github, click on your user and go to Settings. Click on `SSH and GPG keys`
 
 ## C. Fork this repository.
 
-Come back to [https://github.com/kevinzluo/CompAssignmentsF22](https://github.com/kevinzluo/CompAssignmentsF22
-). You should see a button on the upper right called **Fork**. Click it! Now, you should have your personal copy of this repository.
+Come back to [https://github.com/kevinzluo/CompAssignmentsF22](https://github.com/kevinzluo/CompAssignmentsF22). You should see a button on the upper right called **Fork**. Click it! Now, you should have your personal copy of this repository.
 
 Next, you need to **clone** this repository onto your machine. Click on the green `code` option and copy the string you have there. Then, in your terminal, type in `git clone [the string you just received]`.
 
