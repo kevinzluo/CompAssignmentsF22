@@ -1,8 +1,17 @@
 import math
 
 def square_root(n):
-    # Your code here!
-    return -1;
+    '''
+    Return the square root of n. 
+    Return -1 if not NaN. 
+    '''
+    try: 
+        val = int(n)
+        if n < 0:
+            return -1
+        return math.sqrt(n)
+    except ValueError:
+        return -1
 
 def test():
     assert square_root(4) == 2
