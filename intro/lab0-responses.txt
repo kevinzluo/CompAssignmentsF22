@@ -1,0 +1,3 @@
+Git version 2.37.0
+Python 3.10.4
+Pip 22.1.2

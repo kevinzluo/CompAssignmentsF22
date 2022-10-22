@@ -1,7 +1,13 @@
 import random
 
 def random_ints():
-    # Your code here!
+    list = [] # define list
+    while True: # it's going to keep looping until we manually break
+        rand_num = random.randint(1, 10) # generate random integer 1 to 10 inclusive
+        list.append(rand_num) # add to list
+        if rand_num == 6: # if the number is 6, we end the loop
+            break
+    return list
 
 
 def test():
