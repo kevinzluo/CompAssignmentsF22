@@ -1,0 +1,14 @@
+{% if contributor %}
+
+<h1> {{contributor}} </h1>
+<p>Title: {{contributor.title}}</p>
+{% if contributor.bio %}
+<p>Bio: {{contributor.bio}}</p>
+{% endif %}
+<p>Works:</p>
+<ul>
+    {% for article in contributor.content.all %}
+        <li><a href="{% url 'display_article' article.slug %}">{{article.title}}</a> </li>
+    {% endfor %}
+</ul>
+{% endif %}

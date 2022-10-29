@@ -1,0 +1,15 @@
+<h1>{{article.title}}</h1>
+<p>Published on {{article.created_on}}</p>
+
+<p>
+    By: 
+{% for contrib in article.contributors.all %}
+    {% if forloop.last %}
+    <a href="{% url 'display_contributor' contrib.id %}">{{contrib}}, {{contrib.title}}</a>
+    {% else %}
+    <a href="{% url 'display_contributor' contrib.id %}">{{contrib}}, {{contrib.title}}; </a>
+    {% endif %}
+{% endfor %}
+</p>
+
+<p>{{article.text}}</p>
