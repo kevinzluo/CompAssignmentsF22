@@ -247,7 +247,7 @@ const Contributor = function(props: any) {
   let contrib = props.contrib
   return (
     <div>
-      <Link to={`contrib/${contrib.id}/${contrib.firstName}_${contrib.lastName}`}>{contrib.firstName} {contrib.lastName}, {contrib.title};</Link>
+      <Link to={`/contrib/${contrib.id}/${contrib.firstName}_${contrib.lastName}`}>{contrib.firstName} {contrib.lastName}, {contrib.title};</Link>
     </div>
   );
 }
