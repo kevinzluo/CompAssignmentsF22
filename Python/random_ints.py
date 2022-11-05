@@ -1,8 +1,16 @@
 import random
 
-def random_ints():
-    # Your code here!
-
+def random_ints() -> list[int]:
+    '''
+    Randomly generate numbers from [1, 10] and append to a list. Stop at 6.
+    '''
+    ret_list = []
+    generation = random.randint(1, 10)
+    ret_list.append(generation)
+    while generation != 6:
+        generation = random.randint(1, 10)
+        ret_list.append(generation)
+    return ret_list
 
 def test():
     N = 10000

@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'graphene_django'
+    'graphene_django',
+    'content.apps.ContentConfig'
 ]
 
 MIDDLEWARE = [
@@ -114,9 +115,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-# GRAPHENE = {
-#     'SCHEMA': 'content.schema.schema'
-# }
+GRAPHENE = {
+    'SCHEMA': 'content.schema.schema'
+}
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
