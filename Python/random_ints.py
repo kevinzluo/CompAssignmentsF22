@@ -2,6 +2,13 @@ import random
 
 def random_ints():
     # Your code here!
+    l = []
+    while True:
+        a = random.randint(1, 10)
+        l.append(a)
+        if a == 6:
+            break
+    return l
 
 
 def test():
