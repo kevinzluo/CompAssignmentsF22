@@ -2,6 +2,15 @@ import random
 
 def random_ints():
     # Your code here!
+    r = []
+    tmp = (int) (random.random()*10+1)
+    while tmp != 6:
+        r.append(tmp)
+        tmp = (int)(random.random() * 10+1)
+    r.append(tmp)
+    return r
+
+
 
 
 def test():
